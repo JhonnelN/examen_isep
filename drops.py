@@ -7,9 +7,7 @@ def drops(numero):
         resultado += "Plac"
     if numero % 7 == 0:
         resultado += "Ploc"
-    if numero % 3 != 0 and numero % 5 != 0 and numero % 7 != 0:
-        resultado = numero
-    return resultado
+    return resultado or numero  # Shortcircuit
 
 
 # Se convierte el input en un caracter de tipo entero para la validacion en
